@@ -7,9 +7,9 @@ public class Main {
 	byte a = 127;
     short b = -32_768;
     int c = 2_147_483_647;
-    long d = 2_147_483_648l;
-    float e = -1.123_456f;
-    double f = 1.123_456_789_01;
+    long d = 2_147_483_648L;
+    float e = -1.123456f;
+    double f = 1.12345678901;
     System.out.println("Задача1: " + a + ", " + b + ", " + c + ", " + d + ", " + e + ", " + f);
 
     // Задача 2
@@ -73,6 +73,31 @@ public class Main {
     System.out.println("Маша теперь будет получать " + newSalaryMasha + " рублей. Годовой доход вырос на " + yearDifferenceMasha + " рублей");
     System.out.println("Денис теперь будет получать " + newSalaryDenis + " рублей. Годовой доход вырос на " + yearDifferenceDenis + " рублей");
     System.out.println("Кристина теперь будет получать " + newSalaryKristina + " рублей. Годовой доход вырос на " + yearDifferenceKristina + " рублей");
+
+        // Задача 6
+        a = 12;
+        b = 27;
+        c = 44;
+        d = 15;
+        e = 9;
+        short result = (short) (a * (b + (c -d * e)));
+        result = (short) (-1 * result);
+        System.out.println(result);
+
+        // Задача 7
+        a = 5;
+        b = 7;
+        a = (byte) (a + 2);
+        b = (byte) (b - 2);
+        System.out.println("a=" + a + ", b=" + b);
+
+        // Задача 8
+        c = 475;
+        byte reminder100 = (byte) (c % 100);
+        byte reminder10 = (byte) (c % 10);
+        b = (byte) ((reminder100 - reminder10) / 10);
+        System.out.println("b=" + b);
+
 
     }
 }
