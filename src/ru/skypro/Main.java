@@ -85,11 +85,12 @@ public class Main {
         System.out.println(result);
 
         // Задача 7
-        a = 5;
-        b = 7;
-        a += 2;
-        b -= 2;
-        System.out.println("a=" + a + ", b=" + b);
+        float g = 9;
+        float h = 4;
+        g = g / h;
+        h = g * h;
+        g = h / g;
+        System.out.println("g=" + g + ", h=" + h);
 
         // Задача 8
         c = 475;
