@@ -87,15 +87,14 @@ public class Main {
         // Задача 7
         a = 5;
         b = 7;
-        a = (byte) (a + 2);
-        b = (byte) (b - 2);
+        a += 2;
+        b -= 2;
         System.out.println("a=" + a + ", b=" + b);
 
         // Задача 8
         c = 475;
-        byte reminder100 = (byte) (c % 100);
-        byte reminder10 = (byte) (c % 10);
-        b = (byte) ((reminder100 - reminder10) / 10);
+        byte reminder100 = (byte) (c % 100); // Находим остаток от деления на 100
+        b = (byte) (reminder100 / 10); // Берем целое число от деления найденного остатка на 10
         System.out.println("b=" + b);
 
 
