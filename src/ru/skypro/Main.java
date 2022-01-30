@@ -92,6 +92,22 @@ public class Main {
         g = h / g;
         System.out.println("g=" + g + ", h=" + h);
 
+        // Задача 7 (решение через сложение и вычитание)
+        a = 9;
+        b = 4;
+        a = (byte) (a + b); // 9+4
+        b = (short) (a - b); // (9+4) - 4 = 9
+        a = (byte) (a - b); // (9+4) - 9 = 4
+        System.out.println("a=" + a + ", b=" +  b);
+
+        // Задача 7 (решение через умножение)
+        a = 9;
+        b = 4;
+        a = (byte) ( a * b);
+        b = (short) (a / b);
+        a = (byte) (a / b);
+        System.out.println("a=" + a + ", b=" +  b);
+
         // Задача 8
         c = 475;
         byte reminder100 = (byte) (c % 100); // Находим остаток от деления на 100
